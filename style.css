@@ -1,0 +1,91 @@
+.signupPage{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(10%);
+}
+.signUpBox{
+        background-color: #00abf0;
+        padding: 50px;
+        border-radius: 8px;
+        
+}
+.signUpBox > div >h2{
+        color: #053a4f;
+        font-size: 34px;
+        margin-bottom: 30px;
+}
+.signUpBox .signUpSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.signUpBox .signUpSection > div >h2{
+        color: #055a7b;
+        font-size: 30px;
+        margin-bottom: 15px;
+}
+.signUpBox .signUpSection .form form .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+.signUpBox .signUpSection .form form .inputs div{
+        display: flex;
+        flex-direction: column;
+}
+.signUpBox .signUpSection .form form .inputs input{
+        background-color: #055a7b;
+        border-radius: 4px;
+        padding: 5px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        color: #00abf0;
+}
+/* Keep singed In */
+.keepSignIn{
+        margin: 20px 0;
+        color: #053a4f;
+}
+.keepSignIn > input[type="checkbox"],.labelKeepSign{
+        cursor: pointer;
+}
+.keepSignIn > input[type="checkbox"]:checked~.labelKeepSign{
+        color: #022532;
+}
+
+/* submition secion */
+.submitSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+/* sign up button */
+.submitSection .submitbtn{
+        color: #00abf0;
+        background-color: #053a4f;
+        border: none;
+        padding: 5px 10px;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 10px;
+}
+.submitSection .submitbtn:hover{
+        background-color: #022837;
+}
+/* user already have an account */
+.submitSection .haveAccount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        color: #0b4359;
+}
+@media (min-width:1000px) {
+        .signUpBox{
+                height: 80%;
+        }
+}

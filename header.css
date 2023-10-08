@@ -1,0 +1,134 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body{
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #01415a;
+}
+header{
+        position: fixed;
+        right: 0;
+        left: 0;
+        background-color: #025374;
+        min-height: 97px;
+        z-index: 999;
+}
+nav{
+        margin: 0 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+nav .menu-list{
+        display: flex;
+        padding: 8px 0;
+        margin-right: 3%;
+        width: 100%;
+}
+
+nav .menu-list li{
+        position: relative;
+        list-style: none;
+        width: 100%;
+        left: 45px;
+        min-height: 50px;
+        padding: 20px 5px;
+}
+.About-nav-link{
+        margin-left: 30px;
+}
+nav .menu-list li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        text-transform: capitalize;
+        letter-spacing: .7px;
+        transition: .5s;
+}
+nav .menu-list li a:hover{
+        color: #ddd;
+}
+
+.search{
+        border-left: 2px solid #01415a;
+        margin-right: 5px;
+        margin-left: -20px;
+}
+.search i,.fa-list,.fa-circle-xmark{
+        padding-left: 20px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        
+}
+.fa-list,.fa-circle-xmark{
+        font-size: 30px;
+        position: relative;
+        color: #01415a;
+        transition: .5s;
+}
+.fa-circle-xmark:hover{
+        color: #ddd;  
+}
+.signUp,.LogIn{
+        background-color: #666;
+        color: #fff;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 8px;
+        border-radius: 4px;
+        font-family: sans-serif;
+}
+.signUp:hover,.LogIn:hover{
+        background-color: #333;
+}
+@media (max-width:1000px) {
+        nav .menu-list{
+                display: none;
+        }
+        .menu-list nav ul li{
+                border-bottom: 3px solid #025474;
+                cursor: pointer;
+        }
+        nav .menu-list li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background-color: #72cbee;
+                position: absolute;
+                bottom: -2px;
+                z-index: 2;
+                left: 3%;
+        }
+        
+        nav .menu-list li:hover{
+                background-color: #01415a;
+        }
+        nav .menu-list li:hover::after,.active::after{
+                width: 10%;
+                
+                color: #fff;
+        }
+        
+}
+@media (min-width:1000px) {
+        .fa-list,.fa-circle-xmark{
+                display: none;
+        }
+        nav .menu-list{
+                display: flex;
+        }
+        .contactNavLink{
+                margin-left: -20px;
+        }
+}
+
+@media (max-width:375px) {
+        nav{
+                margin: 0 10px;
+        }
+}
